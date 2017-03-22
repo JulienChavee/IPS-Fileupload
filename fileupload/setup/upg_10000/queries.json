@@ -1,0 +1,64 @@
+{
+    "1": {
+        "method": "createTable",
+        "params": [
+            {
+                "name": "fileupload_file",
+                "columns": {
+                    "id": {
+                        "name": "id",
+                        "type": "BIGINT",
+                        "length": "20",
+                        "unsigned": true,
+                        "zerofill": false,
+                        "binary": false,
+                        "allow_null": false,
+                        "default": null,
+                        "auto_increment": true,
+                        "comment": "ID Number"
+                    },
+                    "file": {
+                        "name": "file",
+                        "type": "LONGTEXT",
+                        "length": null,
+                        "decimals": null,
+                        "values": [],
+                        "allow_null": false,
+                        "default": null,
+                        "comment": "",
+                        "unsigned": false,
+                        "zerofill": false,
+                        "auto_increment": false,
+                        "binary": false
+                    },
+                    "member": {
+                        "name": "member",
+                        "type": "MEDIUMINT",
+                        "length": null,
+                        "decimals": null,
+                        "values": [],
+                        "allow_null": true,
+                        "default": null,
+                        "comment": "",
+                        "unsigned": true,
+                        "zerofill": false,
+                        "auto_increment": false,
+                        "binary": false
+                    }
+                },
+                "indexes": {
+                    "PRIMARY": {
+                        "type": "primary",
+                        "name": "PRIMARY",
+                        "columns": [
+                            "id"
+                        ],
+                        "length": [
+                            null
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

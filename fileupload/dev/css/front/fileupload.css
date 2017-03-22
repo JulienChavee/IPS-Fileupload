@@ -1,0 +1,26 @@
+.fileupload_table {
+	width:85%;
+	margin:auto;
+}
+
+.fileupload_table tr {
+	height: 80px;
+}
+
+.fileupload_cell {
+	border: 1px solid rgba(0, 0, 0, 0.04);
+	padding: 5px;
+}
+
+.fileupload_cell img {
+	max-height: 250px;
+	max-width: 100%;
+}
+
+.fileupload_cell_url {
+	width: 200px;
+}
+
+.fileupload_cell_file {
+	width: 65%;
+}<div class=​"ipsSpacer_top">​

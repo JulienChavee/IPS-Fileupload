@@ -1,0 +1,10 @@
+[
+    {
+        "key": "fileupload_allowed_group",
+        "default": ""
+    },
+    {
+        "key": "fileupload_moderator_group",
+        "default": ""
+    }
+]

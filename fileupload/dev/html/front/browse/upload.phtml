@@ -1,0 +1,54 @@
+<ips:template parameters="$form, $data, $isModerator" />
+
+<h1 class="ipsType_pageTitle">{lang="fileupload_firstTitle"}</h1>
+<div class="ipsPageHeader_info ipsType_light">{lang="fileupload_secondTitle"}</div>
+<hr class="ipsHr">
+<div class="ipsSpacer_top ipsGrid_span3">
+	{$form|raw}
+</div>
+
+{{$nbData = count($data);}}
+
+<h1 class="ipsType_pageTitle ipsSpacer_top">{lang="fileupload_filesuploaded" pluralize="$nbData"}</h1>
+<hr class="ipsHr">
+<div class="ipsSpacer_top">
+	<table class="fileupload_table ipsTable_zebra">
+		<tbody>
+			<th class="ipsPad_half ipsAreaBackground_dark">{lang="fileupload_file"}</th>
+			<th class="ipsPad_half ipsAreaBackground_dark">{lang="fileupload_link"}</th>
+			{{if $isModerator}}
+				<th class="ipsPad_half ipsAreaBackground_dark">{lang="fileupload_moderate"}</th>
+			{{endif}}
+
+			{{foreach $data as $v}}
+				{{$id = $v['id'];}}
+				{{$file = \IPS\File::get( 'fileupload', $v['file']);}}
+				{{$ext = \IPS\File::getMimeType( $file->filename );}}
+				{{$member = \IPS\Member::load($v['member']);}}
+				<tr>
+					{{if $file->isImage()}}
+						<td class="fileupload_cell fileupload_cell_file ipsType_center"><img src="{$file->url}" alt=""></td>
+					{{else}}
+						<td class="fileupload_cell fileupload_cell_file ipsType_center">{$ext}</td>
+					{{endif}}
+
+					<!--<td class="fileupload_cell ipsType_center">{$ext}</td>-->
+
+					<td class="fileupload_cell fileupload_cell_url ipsType_center">
+						{{if $file->isImage()}}
+							<a href="{$file->url}" target="_blank">{lang="fileupload_goto"} <i class="fa fa-external-link"></i></a><br>
+						{{else}}
+							<a href="applications/fileupload/interface/file/file.php?id=$id&filename=$file->filename" target="_blank">{lang="fileupload_downloadfile"} <i class="fa fa-download"></i></a><br>
+						{{endif}}
+						
+						{lang="fileupload_by"}{template="userPhoto" group="global" app="core" params="$member, 'tiny'"}{$member->link(false, true)|raw}
+					</td>
+
+					{{if $isModerator}}
+						<td class="fileupload_cell ipsType_center"><a href="{url="app=fileupload&module=fileupload&controller=delete&id={$v['id']}" csrf="1"}" data-confirm class='ipsButton ipsButton_negative ipsButton_verySmall'><i class='fa fa-times'></i> {lang="fileupload_moderate_delete"}</a></td>
+					{{endif}}
+				</tr>
+			{{endforeach}}
+		</tbody>
+	</table>
+</div>

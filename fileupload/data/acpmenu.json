@@ -1,0 +1,10 @@
+{
+    "fileupload": {
+        "setting": {
+            "tab": "fileupload",
+            "controller": "setting",
+            "do": "",
+            "restriction": "setting_manage"
+        }
+    }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+ <app key="fileupload" version="10010">
+  <word key="__app_fileupload" js="0">File Upload</word>
+  <word key="module__fileupload_fileupload" js="0">File Upload</word>
+  <word key="filestorage__fileupload_fileUploadStorage" js="0">File Upload</word>
+  <word key="frontnavigation_fileupload" js="0">File Upload</word>
+  <word key="fileupload_firstTitle" js="0">File Upload</word>
+  <word key="fileupload_secondTitle" js="0">Upload your file</word>
+  <word key="fileupload_uploadField" js="0">Choose your file</word>
+  <word key="fileupload_filesuploaded" js="0">{# [1:file][?:files]} already uploaded</word>
+  <word key="fileupload_by" js="0">By :</word>
+  <word key="fileupload_file" js="0">File</word>
+  <word key="fileupload_goto" js="0">Go to file</word>
+  <word key="fileupload_downloadfile" js="0">Download file</word>
+  <word key="fileupload_link" js="0">Link</word>
+  <word key="fileupload_moderate" js="0">Moderate</word>
+  <word key="fileupload_moderate_delete" js="0">Delete</word>
+  <word key="fileupload_upload_ok" js="0">Files correctly uploaded</word>
+  <word key="fileupload_file_deleted" js="0">File deleted</word>
+  <word key="fileupload_file_delete_error" js="0">An error has occurred during deleting the file</word>
+  <word key="menutab__fileupload" js="0">File Upload</word>
+  <word key="menutab__fileupload_icon" js="0">upload</word>
+  <word key="menu__fileupload_fileupload" js="0">File Upload</word>
+  <word key="menu__fileupload_fileupload_setting" js="0">Settings</word>
+  <word key="menu__fileupload_setting" js="0">Settings</word>
+  <word key="fileupload_general_setting" js="0">General settings</word>
+  <word key="fileupload_moderator_setting" js="0">Moderators</word>
+  <word key="fileupload_allowed_group" js="0">Groups allowed to upload</word>
+  <word key="fileupload_moderator_group" js="0">Groups that can moderate content</word>
+  <word key="acplogs__fileupload_setting_permission_change" js="0">Fileupload - Permissions changed</word>
+ </app>
+</language>

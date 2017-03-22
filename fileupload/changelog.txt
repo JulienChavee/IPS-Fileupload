@@ -1,0 +1,37 @@
+Coming soon - In dev
+
+- Suppression d’un fichier via ajax
+- Upload via ajax ?
+- Si l’utilisateur = guest, lui donner le lien du fichier venant d’être envoyé
+- Pagination
+
+1.2.0 - 02/09/2016
+- Implémentation de l’extension fileUploadStorage
+- Si le fichier n’est pas une image, l’accès au fichier provoque le téléchargement du fichier. Le nom du fichier correspondant au nom du fichier original (avec son extension)
+
+
+1.1.1 - 26/05/2016
+- Correction de l’extension "FrontNavigation" suite au passage à la version 4.1.12
+
+1.0.3 (10004) - 04/08/2015
+
+- Mise en commentaire des erreurs dans le fileUploadStorage
+
+1.0.3 - 01/08/2015
+
+— Résolution d’un bug lorsqu’on utilise l’application sans être connecté
+- Les fichiers sont désormais classés du plus récent au plus ancien
+
+1.0.2 - 31/07/2015
+
+- Le fichier n’était pas supprimé lors d’une suppression
+
+1.0.1 - 30/07/2015
+
+- Ajout de l’icône dans l’ACP
+- Résolution d’un bug ne permettant pas de ne pas avoir de modérateur
+- La suppression des fichiers fonctionne correctement
+
+1.0.0 - 24/07/2015
+
+- First release

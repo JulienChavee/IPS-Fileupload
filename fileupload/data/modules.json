@@ -1,0 +1,14 @@
+{
+    "front": {
+        "fileupload": {
+            "default_controller": "upload",
+            "protected": 0
+        }
+    },
+    "admin": {
+        "fileupload": {
+            "default_controller": "",
+            "protected": false
+        }
+    }
+}
